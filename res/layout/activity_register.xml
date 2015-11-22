@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/title_bg_green" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/icon_account" />
+
+                <EditText
+                    android:id="@+id/et_register_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignBaseline="@+id/imageView1"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:ems="10"
+                    android:text="jiujun" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/icon_pwd" />
+
+                <EditText
+                    android:id="@+id/et_register_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignBaseline="@+id/imageView2"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:ems="10"
+                    android:text="1" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/icon_pwd" />
+
+                <EditText
+                                        android:text="1"
+                    
+                    android:id="@+id/et_register_confirm_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignBaseline="@+id/imageView3"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:ems="10" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/icon_account" />
+
+                <EditText
+                                        android:text="jiujun"
+                    
+                    android:id="@+id/et_register_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignBaseline="@+id/imageView4"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_register_selectIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="@dimen/margin_large"
+                android:onClick="selectIcon"
+                android:src="@drawable/add_image" />
+
+            <Button
+                android:id="@+id/btn_register_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/button_register_bg"
+                android:text="注册" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

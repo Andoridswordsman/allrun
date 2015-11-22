@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:background="#FFFFFFFF"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_toRightOf="@id/progressBar"
+        android:layout_centerVertical="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF000000"
+        android:text="11111"
+        android:id="@+id/tv_dialog"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_dialog"
+        android:layout_toEndOf="@+id/tv_dialog"
+        android:layout_marginLeft="186dp"
+        android:layout_marginStart="186dp" />
+</RelativeLayout>

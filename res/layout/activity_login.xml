@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/title_bg_green" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="登录" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/icon_account" />
+
+                <EditText
+                    android:id="@+id/et_login_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignBaseline="@+id/imageView1"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:ems="10"
+                    android:text="hs" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/icon_pwd" />
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_alignBaseline="@+id/imageView2"
+                    android:layout_marginLeft="@dimen/margin_middle"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:text="hs" >
+                </EditText>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_login_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_register_bg"
+                    android:text="注册" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" >
+                </View>
+
+                <Button
+                    android:id="@+id/btn_login_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_login_bg"
+                    android:text="登录" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

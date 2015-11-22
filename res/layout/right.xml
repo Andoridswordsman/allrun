@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right|center_vertical"
+     android:layout_marginRight="@dimen/margin_middle"
+     >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_chat_text"
+        android:background="@drawable/message_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+     <pl.droidsonroids.gif.GifImageView
+        android:visibility="gone"         
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+     
+      <ImageView
+        android:visibility="gone"         
+        android:id="@+id/iv_chat"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+         />
+      <ImageView
+        android:visibility="gone"         
+        android:id="@+id/iv_playAudio"
+        android:src="@drawable/chat_playing_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>
